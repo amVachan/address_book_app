@@ -27,7 +27,7 @@ The Address Book API provides the following endpoints for managing addresses:
 
 - **Create Address**: `POST /addresses/`
   - Create a new address in the address book.
-  - Required fields: `name`, `latitude`, `longitude`.
+  - Required fields: 'first_name', 'last_name', 'email_address', 'phone_number', 'street', 'city', 'state', 'postal_code', 'latitude', 'longitude'.
 
 - **Get Address by ID**: `GET /addresses/{address_id}`
   - Retrieve an address by its ID from the address book.
@@ -36,7 +36,7 @@ The Address Book API provides the following endpoints for managing addresses:
 - **Update Address**: `PUT /addresses/{address_id}`
   - Update an existing address in the address book.
   - Path parameter: `address_id` (integer).
-  - Required fields: `name`, `latitude`, `longitude`.
+  - Required fields: 'first_name', 'last_name', 'email_address', 'phone_number', 'street', 'city', 'state', 'postal_code', 'latitude', 'longitude'.
 
 - **Delete Address**: `DELETE /addresses/{address_id}`
   - Delete an address from the address book.
